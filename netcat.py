@@ -107,7 +107,7 @@ if __name__ == '__main__':
         netcat.py -t 192.16.1.108 -p 5555 -l -u=mytest.txt #upload file
         netcat.py -t 192.16.1.108 -p 5555 -l -e=\"cat /etc/passwd\" #execute command
         echo 'ABC' | ./netcatripoff.py -t 192.168.1.108 -p 135 #echo text to server port 135 
-        netcatripoff.py -t 192.168.1.108 -p 5555 #connect to server
+        netcat.py -t 192.168.1.108 -p 5555 #connect to server
         '''))
     parser.add_argument('-c', '--command',
                         action='store_true', help='command shell')
